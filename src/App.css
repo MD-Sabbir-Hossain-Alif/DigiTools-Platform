@@ -1,0 +1,14 @@
+.container {
+    max-width: 1600px;
+    width: 75%;
+}
+
+.linear-text {
+    background: linear-gradient(5deg, #4f39f6 0%, #9514fa 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.linear-btn {
+    background: linear-gradient(90deg, #4f39f6 0%, #9514fa 100%);
+}
