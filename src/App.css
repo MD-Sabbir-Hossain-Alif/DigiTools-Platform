@@ -9,6 +9,10 @@
     color: #101727;
 }
 
+.para-color {
+    color: #627382;
+}
+
 .linear-text {
     background: linear-gradient(5deg, #4f39f6 0%, #9514fa 60%);
     -webkit-background-clip: text;

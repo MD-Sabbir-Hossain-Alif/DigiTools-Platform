@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "name": "AI Content Generator Pro",
+        "description": "Generate high-quality blog posts, ads, and marketing copy using advanced AI.",
+        "price": 29.99,
+        "period": "Mo",
+        "tagType": "New",
+        "features": [
+            "Unlimited content generation",
+            "Multiple tone options",
+            "SEO optimization",
+            "Supports 20+ languages"
+        ],
+        "icon": "https://i.ibb.co.com/yFF9Zfz0/writing.png"
+    },
+    {
+        "id": 2,
+        "name": "Premium Design Pack",
+        "description": "Access thousands of icons, templates, and UI kits for creative projects.",
+        "price": 59.99,
+        "period": "One-Time",
+        "tagType": "Best Seller",
+        "features": [
+            "10,000+ design assets",
+            "Figma & Adobe XD support",
+            "Commercial license",
+            "Regular updates"
+        ],
+        "icon": "https://i.ibb.co.com/V0D0F91C/design-tool.png"
+    },
+    {
+        "id": 3,
+        "name": "Stock Media Unlimited",
+        "description": "Unlimited downloads of premium photos, videos, and music tracks.",
+        "price": 19.99,
+        "period": "Mo",
+        "tagType": "New",
+        "features": [
+            "1M+ stock photos",
+            "HD & 4K videos",
+            "Royalty-free music",
+            "Unlimited downloads"
+        ],
+        "icon": "https://i.ibb.co.com/35nwJ8Ks/camera.png"
+    },
+    {
+        "id": 4,
+        "name": "Automation Workflow",
+        "description": "Automate repetitive tasks and connect your favorite apps easily.",
+        "price": 39.99,
+        "period": "Mo",
+        "tagType": "Best Seller",
+        "features": [
+            "100+ app integrations",
+            "Drag & drop workflows",
+            "Real-time triggers",
+            "Cloud sync"
+        ],
+        "icon": "https://i.ibb.co.com/v4GnBwF5/operation.png"
+    },
+    {
+        "id": 5,
+        "name": "Smart Resume Builder AI",
+        "description": "Create ATS-friendly resumes with AI suggestions and templates.",
+        "price": 14.99,
+        "period": "One-Time",
+        "tagType": "Popular",
+        "features": [
+            "ATS-friendly templates",
+            "AI content suggestions",
+            "Export to PDF & Word",
+            "Cover letter builder"
+        ],
+        "icon": "https://i.ibb.co.com/nqfjH044/portfolio.png"
+    },
+    {
+        "id": 6,
+        "name": "Social Media Content Kit",
+        "description": "Ready-to-use templates and captions for all major social platforms.",
+        "price": 24.99,
+        "period": "Yearly",
+        "tagType": "Popular",
+        "features": [
+            "500+ post templates",
+            "Caption generator",
+            "Instagram & TikTok optimized",
+            "Canva compatible"
+        ],
+        "icon": "https://i.ibb.co.com/SwCQJ7Y6/social-media.png"
+    }
+]
