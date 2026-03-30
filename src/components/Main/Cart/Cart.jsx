@@ -1,4 +1,4 @@
-const Cart = ({ cart, carts, setCarts }) => {
+const Cart = ({ cart }) => {
     // console.log(cart);
     const { name, icon, price } = cart;
     return (

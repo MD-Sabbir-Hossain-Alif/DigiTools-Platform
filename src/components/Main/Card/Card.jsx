@@ -7,7 +7,7 @@ const Card = ({ prices, carts, setCarts }) => {
 
     const handelBuyBtn = () => {
         setCarts([...carts, prices]);
-        console.log(carts);
+        // console.log(carts);
     };
     return (
         <div>

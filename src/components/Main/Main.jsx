@@ -36,13 +36,14 @@ const Main = ({ pricingPromise }) => {
                         type="radio"
                         name="my_tabs_1"
                         className="tab rounded-full"
-                        aria-label="Cart (0)"
+                        aria-label={`Cart (${carts.length})`}
                         onClick={() => {
                             setActiveTab("cart");
                         }}
                     />
                 </div>
             </div>
+
             {/* cards section */}
             {activeTab === "products" && (
                 <section className=" max-w-300 mx-auto sm:w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -63,18 +64,16 @@ const Main = ({ pricingPromise }) => {
                     <h4 className="text-color text-2xl font-bold">Your Cart</h4>
                     {/* cart section */}
                     {carts.map((cart) => (
-                        <Cart
-                            key={cart.id}
-                            cart={cart}
-                            carts={carts}
-                            setCarts={setCarts}
-                        />
+                        <Cart key={cart.id} cart={cart} />
                     ))}
                     <div className="flex justify-between items-center">
                         <p>Total:</p>
                         <p className="text-2xl font-bold">$89</p>
                     </div>
-                    <button className="btn linear-btn w-full rounded-full text-white font-bold">
+                    <button
+                        onClick={() => setCarts([])}
+                        className="btn linear-btn w-full rounded-full text-white font-bold"
+                    >
                         Proceed to Checkout
                     </button>
                 </section>
