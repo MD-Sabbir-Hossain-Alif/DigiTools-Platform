@@ -1,6 +1,12 @@
+/* Common CSS */
+
 .container {
     max-width: 1600px;
     width: 75%;
+}
+
+.text-color {
+    color: #101727;
 }
 
 .linear-text {
@@ -11,4 +17,10 @@
 
 .linear-btn {
     background: linear-gradient(90deg, #4f39f6 0%, #9514fa 100%);
+}
+
+.linear-border-btn {
+    background:
+        linear-gradient(white, white) padding-box,
+        linear-gradient(90deg, #4f39f6, #9514fa) border-box;
 }

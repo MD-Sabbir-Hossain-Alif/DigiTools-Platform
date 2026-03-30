@@ -1,30 +1,18 @@
-import React from "react";
+import { IoCartOutline } from "react-icons/io5";
+import { RiMenu2Fill } from "react-icons/ri";
 
 const Navbar = () => {
     return (
-        <div className=" shadow-sm  ">
-            <div className="container mx-auto navbar py-4">
+        <nav className="shadow-sm">
+            <div className="w-[90%] sm:container sm:w-[75%] mx-auto navbar px-0 py-4 font-semibold">
                 <div className="navbar-start">
-                    <div className="dropdown">
+                    <div className="dropdown ">
                         <div
                             tabIndex={0}
                             role="button"
-                            className="btn btn-ghost lg:hidden"
+                            className="btn btn-ghost lg:hidden text-xl mr-2"
                         >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="h-5 w-5"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M4 6h16M4 12h8m-8 6h16"
-                                />
-                            </svg>
+                            <RiMenu2Fill />
                         </div>
                         <ul
                             tabIndex="-1"
@@ -47,7 +35,9 @@ const Navbar = () => {
                             </li>
                         </ul>
                     </div>
-                    <a className="linear-text text-3xl font-bold">DigiTools</a>
+                    <a className="linear-text text-3xl font-bold cursor-pointer">
+                        DigiTools
+                    </a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -69,15 +59,26 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a
-                        className="btn linear-btn text-white rounded-full
+                    <div className="text-[1.75rem] mr-2 md:mr-3  relative">
+                        <IoCartOutline />
+                        <p className=" absolute top-0 -right-1 bg-red-500 text-[8px] text-white rounded-full px-1">
+                            0
+                        </p>
+                    </div>
+                    <div>
+                        <button className="mr-2 md:mr-3 hidden sm:block">
+                            Login
+                        </button>
+                    </div>
+                    <button
+                        className="btn linear-btn text-white font-bold rounded-full hidden sm:block
                     "
                     >
-                        Button
-                    </a>
+                        Get Start
+                    </button>
                 </div>
             </div>
-        </div>
+        </nav>
     );
 };
 
