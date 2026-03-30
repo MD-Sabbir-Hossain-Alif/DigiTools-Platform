@@ -1,6 +1,6 @@
 /* Common CSS */
 
-.container {
+.main-container {
     max-width: 1600px;
     width: 75%;
 }
@@ -15,7 +15,8 @@
     -webkit-text-fill-color: transparent;
 }
 
-.linear-btn {
+.linear-btn,
+.linear-bg {
     background: linear-gradient(90deg, #4f39f6 0%, #9514fa 100%);
 }
 

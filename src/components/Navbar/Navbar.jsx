@@ -4,7 +4,7 @@ import { RiMenu2Fill } from "react-icons/ri";
 const Navbar = () => {
     return (
         <nav className="shadow-sm">
-            <div className="w-[90%] sm:container sm:w-[75%] mx-auto navbar px-0 py-4 font-semibold">
+            <div className="max-w-300 w-[90%] sm:w-full mx-auto navbar px-0 py-4 font-semibold">
                 <div className="navbar-start">
                     <div className="dropdown ">
                         <div

@@ -3,7 +3,7 @@ import active from "../../assets/active.png";
 import banner from "../../assets/banner.png";
 const Banner = () => {
     return (
-        <section className=" w-[90%] sm:container sm:w-[75%] mx-auto my-8 sm:my-22 flex justify-center items-center flex-col-reverse md:flex-row gap-8 sm:gap-15">
+        <section className=" max-w-300 w-[90%] sm:w-full mx-auto my-8 sm:my-22 flex justify-center items-center flex-col-reverse md:flex-row gap-8 sm:gap-15">
             {/* banner content */}
             <div className="max-w-160 w-full space-y-2 sm:space-y-4 text-center sm:text-left">
                 <div className="inline-flex items-center rounded-full py-2 px-4 gap-1 bg-[#e1e7ff]">
