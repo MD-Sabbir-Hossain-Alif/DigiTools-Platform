@@ -14,7 +14,7 @@ const GetStarted = () => {
                     Start using premium digital tools in minutes, not hours.
                 </p>
                 {/* get started card */}
-                <div className="grid grid-cols-3 gap-8">
+                <div className="grid grid-cols-3 gap-8 mt-10">
                     <div className=" relative card border-2 border-[#f1f1f1] bg-white flex flex-col gap-4 px-6 py-20">
                         <span className="absolute top-5 right-5 text-white text-sm linear-bg rounded-full px-3.5 py-2.5">
                             01
@@ -50,7 +50,7 @@ const GetStarted = () => {
                             03
                         </span>
                         <div className="flex items-center justify-center px-3 py-4.5 bg-purple-100 rounded-full w-25 mx-auto">
-                            <img src={user} />
+                            <img src={rocket} />
                         </div>
                         <h4 className="text-2xl text-color font-bold">
                             Start Creating

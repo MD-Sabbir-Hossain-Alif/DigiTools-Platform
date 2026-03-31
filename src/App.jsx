@@ -5,10 +5,16 @@ import Main from "./components/Main/Main";
 import Navbar from "./components/Navbar/Navbar";
 import Stats from "./components/Stats/Stats";
 import GetStarted from "./components/GetStarted/GetStarted";
+import PricingCard from "./components/PricingCard/PricingCard";
 
 const fetchPricing = async () => (await fetch("/pricing-data.json")).json();
 const pricingPromise = fetchPricing();
 // console.log(pricingPromise);
+
+const fetchThreePricing = async () =>
+    (await fetch("/pricing-three.json")).json();
+const threePricingPromise = fetchThreePricing();
+// console.log(threePricingPromise)
 
 function App() {
     const [carts, setCarts] = useState([]);
@@ -23,6 +29,7 @@ function App() {
                 setCarts={setCarts}
             />
             <GetStarted />
+            <PricingCard threePricingPromise={threePricingPromise} />
         </>
     );
 }
