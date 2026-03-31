@@ -7,7 +7,7 @@ const Transform = () => {
                 <h2 className=" text-5xl font-extrabold">
                     Ready to Transform Your Workflow?
                 </h2>
-                <p className="max-w-150 mx-auto leading-6">
+                <p className="max-w-150 mx-auto leading-6 opacity-90">
                     Join thousands of professionals who are already using
                     Digitools to work smarter. Start your free trial today.
                 </p>
@@ -22,7 +22,7 @@ const Transform = () => {
                             View Pricing
                         </button>
                     </div>
-                    <p className="max-w-150 mx-auto leading-6">
+                    <p className="max-w-150 mx-auto leading-6 opacity-90">
                         14-day free trial • No credit card required • Cancel
                         anytime
                     </p>

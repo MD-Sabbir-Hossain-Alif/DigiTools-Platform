@@ -2,7 +2,7 @@ import { IoCheckmarkOutline } from "react-icons/io5";
 import { toast } from "react-toastify";
 
 const Card = ({ prices, carts, setCarts }) => {
-    const { name, description, price, period, tagType, features, icon } =
+    const { id, name, description, price, period, tagType, features, icon } =
         prices;
     // console.log(prices);
 
@@ -16,6 +16,10 @@ const Card = ({ prices, carts, setCarts }) => {
         // console.log(carts);
         toast.success(`${name} added to Cart`);
     };
+
+    const isInCart = carts.find((item) => item.id === id);
+    // console.log(isInCart)
+
     return (
         <div>
             <div className="card bg-base-100 shadow-sm border border-gray-200 text-color rounded-2xl">
@@ -49,7 +53,7 @@ const Card = ({ prices, carts, setCarts }) => {
                             onClick={handelBuyBtn}
                             className="btn btn-primary btn-block linear-btn rounded-full text-white"
                         >
-                            Buy New
+                            {isInCart ? "Added to Cart" : "Buy Now"}
                         </button>
                     </div>
                 </div>

@@ -50,19 +50,19 @@ const Footer = () => {
                     </h6>
                     <div className="grid grid-flow-col gap-4">
                         <a
-                            href="#"
+                            href="www.instagram.com"
                             className="bg-white px-2 py-2 rounded-full text-black text-3xl"
                         >
                             <TbBrandInstagramFilled />
                         </a>
                         <a
-                            href="#"
+                            href="www.facebook.com"
                             className="bg-white px-2 py-2 rounded-full text-black text-3xl"
                         >
                             <FaSquareFacebook />
                         </a>
                         <a
-                            href="#"
+                            href="www.twitter.com"
                             className="bg-white px-2 py-2 rounded-full text-black text-3xl"
                         >
                             <RiTwitterXFill />
