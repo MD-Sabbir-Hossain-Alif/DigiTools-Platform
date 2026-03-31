@@ -6,7 +6,7 @@ import rocket from "../../assets/rocket.png";
 const GetStarted = () => {
     return (
         <section className="max-w-400 w-[75%] mx-auto my-30 bg-[#f9fafc]">
-            <div className="text-center space-y-4">
+            <div className="max-w-300 w-full mx-auto text-center space-y-4">
                 <h2 className="text-color text-5xl font-extrabold">
                     Get Started in 3 Steps
                 </h2>

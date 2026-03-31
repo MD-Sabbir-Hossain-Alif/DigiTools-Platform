@@ -36,7 +36,7 @@ const Main = ({ pricingPromise, carts, setCarts }) => {
                     <input
                         type="radio"
                         name="my_tabs_1"
-                        className="tab rounded-full "
+                        className="tab rounded-full checked:bg-linear-to-r from-[#4f39f6] to-[#9514fa] checked:text-white"
                         aria-label="Products"
                         defaultChecked
                         onClick={() => {
@@ -46,7 +46,7 @@ const Main = ({ pricingPromise, carts, setCarts }) => {
                     <input
                         type="radio"
                         name="my_tabs_1"
-                        className="tab rounded-full"
+                        className="tab rounded-full checked:bg-linear-to-r from-[#4f39f6] to-[#9514fa] checked:text-white"
                         aria-label={`Cart (${carts.length})`}
                         onClick={() => {
                             setActiveTab("cart");
