@@ -1,15 +1,21 @@
 import { use, useState } from "react";
 import Card from "./Card/Card";
 import Cart from "./Cart/Cart";
+import { IoCartOutline } from "react-icons/io5";
+import { toast } from "react-toastify";
 
-const Main = ({ pricingPromise }) => {
+const Main = ({ pricingPromise, carts, setCarts }) => {
     const pricing = use(pricingPromise);
     // console.log(pricing);
 
     const [activeTab, setActiveTab] = useState("products");
     // console.log(activeTab);
 
-    const [carts, setCarts] = useState([]);
+    const handelCheckoutBtn = () => {
+        // console.log("i'm clicked");
+        setCarts([]);
+        toast.success("Checkout Successfully");
+    };
 
     return (
         <main className="max-w-400 w-[75%] mx-auto my-30">
@@ -61,21 +67,32 @@ const Main = ({ pricingPromise }) => {
             {/* cart section */}
             {activeTab === "cart" && (
                 <section className="border border-gray-200 p-10 rounded-2xl space-y-6">
-                    <h4 className="text-color text-2xl font-bold">Your Cart</h4>
-                    {/* cart section */}
-                    {carts.map((cart) => (
-                        <Cart key={cart.id} cart={cart} />
-                    ))}
-                    <div className="flex justify-between items-center">
-                        <p>Total:</p>
-                        <p className="text-2xl font-bold">$89</p>
-                    </div>
-                    <button
-                        onClick={() => setCarts([])}
-                        className="btn linear-btn w-full rounded-full text-white font-bold"
-                    >
-                        Proceed to Checkout
-                    </button>
+                    {carts.length === 0 ? (
+                        <p className="text-4xl text-center text-gray-500 flex items-center justify-center flex-col gap-5 p-10">
+                            <IoCartOutline className="text-6xl" />
+                            Your cart is empty
+                        </p>
+                    ) : (
+                        <>
+                            <h4 className="text-color text-2xl font-bold">
+                                Your Cart
+                            </h4>
+                            {/* cart section */}
+                            {carts.map((cart) => (
+                                <Cart key={cart.id} cart={cart} />
+                            ))}
+                            <div className="flex justify-between items-center">
+                                <p className="text-2xl font-bold">Total:</p>
+                                <p className="text-2xl font-bold">$89</p>
+                            </div>
+                            <button
+                                onClick={handelCheckoutBtn}
+                                className="btn linear-btn w-full rounded-full text-white font-bold"
+                            >
+                                Proceed to Checkout
+                            </button>
+                        </>
+                    )}
                 </section>
             )}
         </main>

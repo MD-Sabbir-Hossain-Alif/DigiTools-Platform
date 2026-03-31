@@ -1,7 +1,9 @@
 import { IoCartOutline } from "react-icons/io5";
 import { RiMenu2Fill } from "react-icons/ri";
 
-const Navbar = () => {
+const Navbar = ({ carts }) => {
+    // console.log(totalCart);
+
     return (
         <nav className="shadow-sm">
             <div className="max-w-300 w-[90%] sm:w-full mx-auto navbar px-0 py-4 font-semibold">
@@ -61,8 +63,9 @@ const Navbar = () => {
                 <div className="navbar-end">
                     <div className="text-[1.75rem] mr-2 md:mr-3  relative">
                         <IoCartOutline />
+
                         <p className=" absolute top-0 -right-1 bg-red-500 text-[8px] text-white rounded-full px-1">
-                            0
+                            {carts.length}
                         </p>
                     </div>
                     <div>

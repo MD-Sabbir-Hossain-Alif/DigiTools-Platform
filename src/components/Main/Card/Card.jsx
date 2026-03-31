@@ -1,4 +1,5 @@
 import { IoCheckmarkOutline } from "react-icons/io5";
+import { toast } from "react-toastify";
 
 const Card = ({ prices, carts, setCarts }) => {
     const { name, description, price, period, tagType, features, icon } =
@@ -6,8 +7,14 @@ const Card = ({ prices, carts, setCarts }) => {
     // console.log(prices);
 
     const handelBuyBtn = () => {
+        const isExist = carts.find((item) => item.id === prices.id);
+        if (isExist) {
+            toast.warning(`${name} alrady exist in Cart`);
+            return;
+        }
         setCarts([...carts, prices]);
         // console.log(carts);
+        toast.success(`${name} added to Cart`);
     };
     return (
         <div>

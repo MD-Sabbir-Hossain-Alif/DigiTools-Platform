@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import Banner from "./components/Banner/Banner";
 import Main from "./components/Main/Main";
@@ -9,12 +10,17 @@ const pricingPromise = fetchPricing();
 // console.log(pricingPromise);
 
 function App() {
+    const [carts, setCarts] = useState([]);
     return (
         <>
-            <Navbar />
+            <Navbar carts={carts} />
             <Banner />
             <Stats />
-            <Main pricingPromise={pricingPromise} />
+            <Main
+                pricingPromise={pricingPromise}
+                carts={carts}
+                setCarts={setCarts}
+            />
         </>
     );
 }
