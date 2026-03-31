@@ -17,6 +17,11 @@ const Main = ({ pricingPromise, carts, setCarts }) => {
         toast.success("Checkout Successfully");
     };
 
+    // total price
+    const totalPrice = carts.reduce((total, cart) => total + cart.price, 0);
+
+    // console.log(totalPrice);
+
     return (
         <main className="max-w-400 w-[75%] mx-auto my-30">
             <div className="text-center space-y-4  mb-10">
@@ -79,11 +84,18 @@ const Main = ({ pricingPromise, carts, setCarts }) => {
                             </h4>
                             {/* cart section */}
                             {carts.map((cart) => (
-                                <Cart key={cart.id} cart={cart} />
+                                <Cart
+                                    key={cart.id}
+                                    cart={cart}
+                                    carts={carts}
+                                    setCarts={setCarts}
+                                />
                             ))}
                             <div className="flex justify-between items-center">
                                 <p className="text-2xl font-bold">Total:</p>
-                                <p className="text-2xl font-bold">$89</p>
+                                <p className="text-2xl font-bold">
+                                    ${totalPrice.toFixed(2)}
+                                </p>
                             </div>
                             <button
                                 onClick={handelCheckoutBtn}

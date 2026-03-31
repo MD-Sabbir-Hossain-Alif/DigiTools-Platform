@@ -1,6 +1,14 @@
-const Cart = ({ cart }) => {
+import { toast } from "react-toastify";
+
+const Cart = ({ cart, carts, setCarts }) => {
     // console.log(cart);
-    const { name, icon, price } = cart;
+    const { id, name, icon, price } = cart;
+
+    const handelRemoveBtn = () => {
+        toast.warning(`${name} removed`);
+        setCarts(carts.filter((item) => item.id !== id));
+        // console.log(filterdCart);
+    };
     return (
         <div>
             <li className="list-row text-color shadow flex justify-between items-center p-5 bg-[#f9fafc] rounded-2xl">
@@ -14,7 +22,10 @@ const Cart = ({ cart }) => {
                     </div>
                 </div>
 
-                <button className="btn btn-outline btn-error font-bold border-none">
+                <button
+                    onClick={handelRemoveBtn}
+                    className="btn btn-outline btn-error font-bold border-none"
+                >
                     Remove
                 </button>
             </li>
