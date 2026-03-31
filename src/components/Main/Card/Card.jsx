@@ -9,7 +9,7 @@ const Card = ({ prices, carts, setCarts }) => {
     const handelBuyBtn = () => {
         const isExist = carts.find((item) => item.id === prices.id);
         if (isExist) {
-            toast.warning(`${name} alrady exist in Cart`);
+            toast.error(`${name} alrady exist in Cart`);
             return;
         }
         setCarts([...carts, prices]);

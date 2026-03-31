@@ -4,6 +4,7 @@ import Banner from "./components/Banner/Banner";
 import Main from "./components/Main/Main";
 import Navbar from "./components/Navbar/Navbar";
 import Stats from "./components/Stats/Stats";
+import GetStarted from "./components/GetStarted/GetStarted";
 
 const fetchPricing = async () => (await fetch("/pricing-data.json")).json();
 const pricingPromise = fetchPricing();
@@ -21,6 +22,7 @@ function App() {
                 carts={carts}
                 setCarts={setCarts}
             />
+            <GetStarted />
         </>
     );
 }

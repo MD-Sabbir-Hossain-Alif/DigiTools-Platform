@@ -5,7 +5,7 @@ const Cart = ({ cart, carts, setCarts }) => {
     const { id, name, icon, price } = cart;
 
     const handelRemoveBtn = () => {
-        toast.warning(`${name} removed`);
+        toast.info(`${name} removed`);
         setCarts(carts.filter((item) => item.id !== id));
         // console.log(filterdCart);
     };
