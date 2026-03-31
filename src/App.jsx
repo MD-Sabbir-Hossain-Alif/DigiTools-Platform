@@ -7,6 +7,7 @@ import Stats from "./components/Stats/Stats";
 import GetStarted from "./components/GetStarted/GetStarted";
 import PricingCard from "./components/PricingCard/PricingCard";
 import Transform from "./components/Transform/Transform";
+import Footer from "./components/Footer/Footer";
 
 const fetchPricing = async () => (await fetch("/pricing-data.json")).json();
 const pricingPromise = fetchPricing();
@@ -32,6 +33,7 @@ function App() {
             <GetStarted />
             <PricingCard threePricingPromise={threePricingPromise} />
             <Transform />
+            <Footer />
         </>
     );
 }

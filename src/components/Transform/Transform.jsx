@@ -18,7 +18,7 @@ const Transform = () => {
                                 Explore Product
                             </button>
                         </div>
-                        <button className="btn linear-btn rounded-full text-white px-6">
+                        <button className="btn shadow-none linear-btn rounded-full text-white px-6">
                             View Pricing
                         </button>
                     </div>
