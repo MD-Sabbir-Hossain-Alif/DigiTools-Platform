@@ -23,12 +23,12 @@ const Main = ({ pricingPromise, carts, setCarts }) => {
     // console.log(totalPrice);
 
     return (
-        <main className="max-w-300 w-full mx-auto px-4 sm:px-0 my-30">
-            <div className="text-center space-y-4  mb-10">
-                <h2 className="text-color text-5xl font-extrabold">
+        <main className="max-w-308 w-full mx-auto px-4 my-14 md:my-22 lg:my-30">
+            <div className="text-center space-y-2 md:space-y-4 mb-5 md:mb-10">
+                <h2 className="text-color text-4xl lg:text-5xl font-extrabold">
                     Premium Digital Tools
                 </h2>
-                <p className="max-w-135 mx-auto para-color leading-6">
+                <p className="max-w-135 mx-auto para-color leading-6 text-sm md:text-base">
                     Choose from our curated collection of premium digital
                     products designed to boost your productivity and creativity.
                 </p>

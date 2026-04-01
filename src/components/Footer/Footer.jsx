@@ -5,9 +5,9 @@ import { TbBrandInstagramFilled } from "react-icons/tb";
 
 const Footer = () => {
     return (
-        <footer className=" bg-[#101727] pt-30 ">
-            <section className="max-w-300 w-full mx-auto px-4 lg:px-0">
-                <div className="footer sm:footer-horizontal text-white pb-20">
+        <footer className=" bg-[#101727] pt-14 md:pt-22 lg:pt-30 ">
+            <section className="max-w-308 w-full mx-auto px-4 ">
+                <div className="footer sm:footer-horizontal text-white pb-10 md:pb-16 lg:pb-20">
                     <aside className="space-y-4">
                         <h3 className="text-3xl font-extrabold">DigiTools</h3>
                         <p className="opacity-80">
@@ -77,7 +77,7 @@ const Footer = () => {
                         </div>
                     </nav>
                 </div>
-                <div className="flex flex-col sm:flex-row text-sm gap-2 justify-between items-center text-[#fafafa] py-8 border-t border-gray-500 opacity-50">
+                <div className="flex flex-col sm:flex-row text-sm gap-2 justify-between items-center text-[#fafafa] py-4 md:py-8 border-t border-gray-500 opacity-50">
                     <p>© 2026 Digitools. All rights reserved.</p>
                     <div className="flex gap-5">
                         <p>Privacy Policy</p>
