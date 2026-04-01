@@ -5,8 +5,8 @@ import rocket from "../../assets/rocket.png";
 
 const GetStarted = () => {
     return (
-        <section className="max-w-400 w-[75%] mx-auto my-30 bg-[#f9fafc]">
-            <div className="max-w-300 w-full mx-auto text-center space-y-4">
+        <section className="my-30 bg-[#f9fafc]">
+            <div className="max-w-300 w-full mx-auto px-4 sm:px-0 text-center space-y-4">
                 <h2 className="text-color text-5xl font-extrabold">
                     Get Started in 3 Steps
                 </h2>
@@ -14,7 +14,7 @@ const GetStarted = () => {
                     Start using premium digital tools in minutes, not hours.
                 </p>
                 {/* get started card */}
-                <div className="grid grid-cols-3 gap-8 mt-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
                     <div className=" relative card border-2 border-[#f1f1f1] bg-white flex flex-col gap-4 px-6 py-20">
                         <span className="absolute top-5 right-5 text-white text-sm linear-bg rounded-full px-3.5 py-2.5">
                             01

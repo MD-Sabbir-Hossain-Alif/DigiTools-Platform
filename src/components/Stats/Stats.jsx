@@ -1,7 +1,7 @@
 const Stats = () => {
     return (
-        <section className="max-w-400 mx-auto w-full linear-bg">
-            <div className=" max-w-300 mx-auto sm:w-full flex justify-evenly items-center  text-white text-center py-8 sm:py-15">
+        <section className="linear-bg">
+            <div className=" max-w-300 mx-auto w-full px-4 sm:px-0 flex justify-evenly items-center  text-white text-center py-8 sm:py-15">
                 <div className="">
                     <h3 className=" text-2xl sm:text-6xl font-extrabold">
                         50K

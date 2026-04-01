@@ -6,7 +6,7 @@ const Navbar = ({ carts }) => {
 
     return (
         <nav className="shadow-sm">
-            <div className="max-w-300 w-[90%] sm:w-full mx-auto navbar px-0 py-4 font-semibold">
+            <div className="max-w-300 w-full mx-auto navbar px-4 sm:px-0 py-4 font-semibold">
                 <div className="navbar-start">
                     <div className="dropdown ">
                         <div

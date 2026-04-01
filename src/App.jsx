@@ -8,6 +8,7 @@ import GetStarted from "./components/GetStarted/GetStarted";
 import PricingCard from "./components/PricingCard/PricingCard";
 import Transform from "./components/Transform/Transform";
 import Footer from "./components/Footer/Footer";
+import Container from "./components/Container/Container";
 
 const fetchPricing = async () => (await fetch("/pricing-data.json")).json();
 const pricingPromise = fetchPricing();
@@ -22,18 +23,20 @@ function App() {
     const [carts, setCarts] = useState([]);
     return (
         <>
-            <Navbar carts={carts} />
-            <Banner />
-            <Stats />
-            <Main
-                pricingPromise={pricingPromise}
-                carts={carts}
-                setCarts={setCarts}
-            />
-            <GetStarted />
-            <PricingCard threePricingPromise={threePricingPromise} />
-            <Transform />
-            <Footer />
+            <Container>
+                <Navbar carts={carts} />
+                <Banner />
+                <Stats />
+                <Main
+                    pricingPromise={pricingPromise}
+                    carts={carts}
+                    setCarts={setCarts}
+                />
+                <GetStarted />
+                <PricingCard threePricingPromise={threePricingPromise} />
+                <Transform />
+                <Footer />
+            </Container>
         </>
     );
 }

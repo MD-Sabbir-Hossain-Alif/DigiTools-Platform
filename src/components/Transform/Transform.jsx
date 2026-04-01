@@ -2,8 +2,8 @@ import React from "react";
 
 const Transform = () => {
     return (
-        <section className="max-w-400 mx-auto w-full linear-bg py-30">
-            <div className="max-w-300 w-full mx-auto text-center space-y-4 text-white">
+        <section className="linear-bg py-30">
+            <div className="max-w-300 w-full mx-auto px-4 lg:px-0 text-center space-y-4 text-white">
                 <h2 className=" text-5xl font-extrabold">
                     Ready to Transform Your Workflow?
                 </h2>
