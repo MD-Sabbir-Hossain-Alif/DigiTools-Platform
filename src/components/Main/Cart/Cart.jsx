@@ -11,14 +11,18 @@ const Cart = ({ cart, carts, setCarts }) => {
     };
     return (
         <div>
-            <li className="list-row text-color shadow flex justify-between items-center p-5 bg-[#f9fafc] rounded-2xl">
-                <div className="flex items-center gap-5">
+            <li className="list-row text-color shadow flex flex-col sm:flex-row gap-3  sm:gap-0 text-center sm:text-left justify-between items-center p-2 sm:p-5 bg-[#f9fafc] rounded-2xl">
+                <div className="flex flex-col sm:flex-row items-center gap-2 md:gap-5">
                     <div className="rounded-full py-3 px-3 bg-white">
                         <img src={icon} />
                     </div>
                     <div>
-                        <div className="text-xl font-semibold mb-2">{name}</div>
-                        <div className=" text-[#627382]">${price}</div>
+                        <div className="text-base sm:text-xl font-semibold sm:mb-2">
+                            {name}
+                        </div>
+                        <div className=" text-[#627382] text-sm sm:text-base">
+                            ${price}
+                        </div>
                     </div>
                 </div>
 

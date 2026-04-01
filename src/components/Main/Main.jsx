@@ -71,9 +71,9 @@ const Main = ({ pricingPromise, carts, setCarts }) => {
 
             {/* cart section */}
             {activeTab === "cart" && (
-                <section className="border border-gray-200 p-10 rounded-2xl space-y-6">
+                <section className="border border-gray-200 p-5 md:p-10 rounded-2xl space-y-3 md:space-y-6">
                     {carts.length === 0 ? (
-                        <p className="text-4xl text-center text-gray-500 flex items-center justify-center flex-col gap-5 p-10">
+                        <p className="text-3xl sm:text-4xl text-center text-gray-500 flex items-center justify-center flex-col gap-5 p-0 sm:p-10">
                             <IoCartOutline className="text-6xl" />
                             Your cart is empty
                         </p>
@@ -92,8 +92,10 @@ const Main = ({ pricingPromise, carts, setCarts }) => {
                                 />
                             ))}
                             <div className="flex justify-between items-center">
-                                <p className="text-2xl font-bold">Total:</p>
-                                <p className="text-2xl font-bold">
+                                <p className="text-xl sm:text-2xl font-bold">
+                                    Total:
+                                </p>
+                                <p className="text-xl sm:text-2xl font-bold">
                                     ${totalPrice.toFixed(2)}
                                 </p>
                             </div>
